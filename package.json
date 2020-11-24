@@ -1,6 +1,6 @@
 {
   "name": "svelte-collapsible",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "svelte": "src/index.js",
   "scripts": {
     "build": "rollup -c",

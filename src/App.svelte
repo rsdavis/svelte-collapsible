@@ -1,12 +1,9 @@
 
 <script>
 
-    import Accordion from './Accordion.svelte'
-    import AccordionItem from './AccordionItem.svelte'
+    import { Accordion, AccordionItem } from './index.js'
 
     let key = 'b'
-
-    $: console.log(key)
 
 </script>
 
