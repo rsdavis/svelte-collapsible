@@ -4,6 +4,7 @@
     import collapse from 'svelte-collapse'
     let open = true
     const duration = 0.5
+
 </script> 
 
 <div class='card' class:open>
