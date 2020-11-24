@@ -24,14 +24,14 @@
 
 </script>
 
-<div class='accordion-item'>
+<li class='accordion-item'>
     <div class='accordion-item-header' on:click={handleToggle}>
         <slot name='header' />
     </div>
     <div class='accordion-item-body' use:collapse={{open}}>
         <slot name='body' />
     </div>
-</div>
+</li>
 
 <style>
     .accordion-item-header {
