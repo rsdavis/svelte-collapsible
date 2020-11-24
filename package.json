@@ -1,6 +1,6 @@
 {
   "name": "svelte-collapsible",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "svelte": "src/index.js",
   "scripts": {
     "build": "rollup -c",
@@ -19,5 +19,10 @@
   "dependencies": {
     "sirv-cli": "^1.0.0",
     "svelte-collapse": "0.0.2"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/rsdavis/svelte-collapsible",
+      "directory": "/"
   }
 }

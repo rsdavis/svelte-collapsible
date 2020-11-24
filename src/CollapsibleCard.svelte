@@ -1,15 +1,33 @@
 
 <script>
 
+    import { createEventDispatcher } from 'svelte'
     import collapse from 'svelte-collapse'
-    let open = true
-    const duration = 0.5
+
+    export let open = true
+    export let duration = 0.5
+    const dispatch = createEventDispatcher()
+
+    function handleToggle () {
+
+        open = !open
+
+        if (open) {
+            dispatch('open')
+        }
+        else {
+            dispatch('close')
+        }
+
+    }
+
+    console.log({open})
 
 </script> 
 
 <div class='card' class:open>
 
-    <div class='card-header' on:click={() => open = !open}>
+    <div class='card-header' on:click={handleToggle}>
         <slot name='header'/>
     </div>
 
