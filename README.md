@@ -7,6 +7,15 @@ A collection of high-level Svelte components designed for expanding and collapsi
 * Accordion - item collection where open state is mutually exclusive
 * AccordionItem - item in collection
 
+Check out the demo's
+
+[Svelte Collapsible Demo - Accordion](https://svelte.dev/repl/1b3474c81253461dba775238c0228bca?version=3.30.0)
+
+[Svelte Collapsible Demo - Basic Card](https://svelte.dev/repl/7adc6bc2778040509ce498e6cb4322b0?version=3.30.0)
+
+[Svelte Collapsible Demo - Styled Cards](https://svelte.dev/repl/aafe54bdba204d6f9c6431f8eca50915?version=3.30.0)
+
+
 ## Usage
 
 ```bash
