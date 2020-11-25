@@ -21,7 +21,6 @@
             store.update(s => Object.assign(s, { key: null }))
         }
         else {
-            console.log("here")
             store.update(s => Object.assign(s, { key }))
         }
 
