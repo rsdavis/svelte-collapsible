@@ -6,6 +6,8 @@
 
     export let open = true
     export let duration = 0.5
+    export let easing = 'ease'
+
     const dispatch = createEventDispatcher()
 
     function handleToggle () {
@@ -31,7 +33,7 @@
         <slot name='header'/>
     </div>
 
-    <div class='card-body' use:collapse={{open, duration}}>
+    <div class='card-body' use:collapse={{open, duration, easing}}>
         <slot name='body'/>
     </div>
 

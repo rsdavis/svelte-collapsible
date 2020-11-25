@@ -5,9 +5,11 @@
 
     let key = 'b'
 
+    $:console.log({ key })
+
 </script>
 
-<Accordion bind:key>
+<Accordion bind:key duration={0.1}>
     <AccordionItem key='a'>
         <div slot='header'>a</div>
         <div slot='body'>body</div>

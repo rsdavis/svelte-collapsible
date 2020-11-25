@@ -9,15 +9,20 @@
 
     const store = getContext('svelte-collapsible-accordion')
 
-    $: open = $store === key
+    $: params = { 
+        open: $store.key === key, 
+        duration: $store.duration,
+        easing: $store.easing
+    }
 
     function handleToggle () {
 
-        if (open) {
-            store.update(_ => null)
+        if (params.open) {
+            store.update(s => Object.assign(s, { key: null }))
         }
         else {
-            store.update(_ => key)
+            console.log("here")
+            store.update(s => Object.assign(s, { key }))
         }
 
     }
@@ -30,7 +35,7 @@
         <slot name='header' />
     </div>
 
-    <div class='accordion-item-body' use:collapse={{open}}>
+    <div class='accordion-item-body' use:collapse={params}>
         <slot name='body' />
     </div>
 

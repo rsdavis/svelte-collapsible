@@ -63,6 +63,18 @@ You can also use this feature to set which item should be open when mounted.
 </Accordion>
 ```
 
+You can modify the duration and easing of the collapsible section using component props.
+
+```html
+<script>
+    const duration = 0.5 // seconds
+    const easing = 'linear'
+</script>
+
+<Accordion { duration } { easing } />
+<CollapsibleCard { duration } { easing } />
+```
+
 ## Motivation
 
 These elements are designed to be drop-in, ready to go, with JS functionality and some styling built-in.
