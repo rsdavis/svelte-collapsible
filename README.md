@@ -16,7 +16,7 @@ Check out the demo's
 [Svelte Collapsible Demo - Styled Cards](https://svelte.dev/repl/aafe54bdba204d6f9c6431f8eca50915?version=3.30.0)
 
 
-## Usage
+## Collapsible Card
 
 ```bash
 npm install svelte-collapsible
@@ -32,6 +32,8 @@ npm install svelte-collapsible
     <p slot='body'>Body</p>
 </CollapsibleCard>
 ```
+
+## Accordion
 
 ```html
 <script>
@@ -74,6 +76,9 @@ You can modify the duration and easing of the collapsible section using componen
 <Accordion { duration } { easing } />
 <CollapsibleCard { duration } { easing } />
 ```
+
+If you need control of the selected item, you can use the `key` prop and the `on:change` event to manage the state of the component externally.
+
 
 ## Motivation
 
