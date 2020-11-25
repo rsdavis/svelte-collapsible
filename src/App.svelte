@@ -7,7 +7,6 @@
 
 </script>
 
-
 <Accordion bind:key>
     <AccordionItem key='a'>
         <div slot='header'>a</div>
@@ -38,3 +37,13 @@
         <div slot='body'>body</div>
     </AccordionItem>
 </Accordion>
+
+<style>
+
+    :global(.accordion) {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+</style>

@@ -15,14 +15,6 @@
 
 </script>
 
-<ul class='accordion'>
+<div class='accordion'>
     <slot />
-</ul>
-
-<style>
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-</style>
+</div>
