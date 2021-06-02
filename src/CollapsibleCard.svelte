@@ -23,8 +23,6 @@
 
     }
 
-    console.log({open})
-
 </script> 
 
 <div class='card' class:open>

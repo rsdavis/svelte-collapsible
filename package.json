@@ -1,6 +1,6 @@
 {
   "name": "svelte-collapsible",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "svelte": "src/index.js",
   "license": "MIT",
   "scripts": {
