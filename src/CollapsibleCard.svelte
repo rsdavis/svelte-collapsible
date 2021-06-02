@@ -25,7 +25,7 @@
 
 </script> 
 
-<div class='card' class:open>
+<div class='card' class:open aria-expanded={open}>
 
     <div class='card-header' on:click={handleToggle}>
         <slot name='header'/>
