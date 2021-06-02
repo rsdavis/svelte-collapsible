@@ -6,5 +6,5 @@
 
 </script>
 
-<!-- <DemoCard/> -->
-<DemoAccordion />
+<DemoCard/>
+<!-- <DemoAccordion /> -->

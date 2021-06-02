@@ -5,7 +5,7 @@
     import collapse from 'svelte-collapse'
 
     export let open = true
-    export let duration = 0.5
+    export let duration = 0.2
     export let easing = 'ease'
 
     const dispatch = createEventDispatcher()
