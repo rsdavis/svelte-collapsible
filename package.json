@@ -2,6 +2,7 @@
   "name": "svelte-collapsible",
   "version": "0.0.8",
   "svelte": "src/index.js",
+  "license": "MIT",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
