@@ -1,6 +1,6 @@
 <script>
 
-    import { Accordion, AccordionItem } from './index.js'
+    import { Accordion, AccordionItem } from '../index.js'
 
     const items = [
         {

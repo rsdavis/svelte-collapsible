@@ -1,5 +1,5 @@
 <script>
-    import { CollapsibleCard } from "./index.js";
+    import { CollapsibleCard } from "../index.js";
 </script>
 
 <CollapsibleCard>
