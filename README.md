@@ -2,25 +2,24 @@
 # Svelte Collapsible
 
 A collection of high-level Svelte components designed for expanding and collapsing content. 
+Check out the demos ...
 
-* CollapsibleCard - card with header and collapsible body
-* Accordion - item collection where open state is mutually exclusive
-* AccordionItem - item in collection
+[Demo - Accordion](https://svelte.dev/repl/1b3474c81253461dba775238c0228bca?version=3.30.0)
 
-Check out the demo's
+[Demo - Basic Card](https://svelte.dev/repl/7adc6bc2778040509ce498e6cb4322b0?version=3.30.0)
 
-[Svelte Collapsible Demo - Accordion](https://svelte.dev/repl/1b3474c81253461dba775238c0228bca?version=3.30.0)
+[Demo - Styled Cards](https://svelte.dev/repl/aafe54bdba204d6f9c6431f8eca50915?version=3.30.0)
 
-[Svelte Collapsible Demo - Basic Card](https://svelte.dev/repl/7adc6bc2778040509ce498e6cb4322b0?version=3.30.0)
-
-[Svelte Collapsible Demo - Styled Cards](https://svelte.dev/repl/aafe54bdba204d6f9c6431f8eca50915?version=3.30.0)
-
-
-## Collapsible Card
+## Install
 
 ```bash
 npm install svelte-collapsible
 ```
+
+## Collapsible Card
+
+A collapsible card is a single, simple component that takes two slots.
+When a user clicks on the `header` slot, the `body` slot expands to open or shut.
 
 ```html
 <script>
@@ -34,6 +33,10 @@ npm install svelte-collapsible
 ```
 
 ## Accordion
+
+The accordion is a collection of collapsible items where at most a single item is expanded at any time.
+When a new item opens, it simultaneously closes any other open item.
+The component uses keys on the items to keep track of which one is currently open.
 
 ```html
 <script>
@@ -52,8 +55,8 @@ npm install svelte-collapsible
 </Accordion>
 ```
 
-For the accordion, if you need to know which item is currently in the open state, you can bind to the key prop on the Accordion component.
-This value will be set to the provided key value of the opened item, and it will be `null` when all of the items are closed.
+If you need to know which item is currently in the open state, you can bind to the key prop on the Accordion component.
+It will be `null` when all items are closed, or the value of associated key when an item is opened.
 You can also use this feature to set which item should be open when mounted.
 
 ```html
@@ -64,6 +67,8 @@ You can also use this feature to set which item should be open when mounted.
 <Accordion bind:key>
 </Accordion>
 ```
+
+If you need control of the selected item, you can use the `key` prop and the `on:change` event to manage the state of the component externally.
 
 You can modify the duration and easing of the collapsible section using component props.
 
@@ -76,8 +81,6 @@ You can modify the duration and easing of the collapsible section using componen
 <Accordion { duration } { easing } />
 <CollapsibleCard { duration } { easing } />
 ```
-
-If you need control of the selected item, you can use the `key` prop and the `on:change` event to manage the state of the component externally.
 
 
 ## Motivation
