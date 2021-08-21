@@ -32,6 +32,15 @@
 
 </script>
 
-<div class='accordion'>
+<ul class='accordion'>
     <slot />
-</div>
+</ul>
+
+<style>
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+</style>
