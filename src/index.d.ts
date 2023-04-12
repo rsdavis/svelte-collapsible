@@ -3,10 +3,10 @@ declare module "svelte-collapsible" {
   export class Accordion extends SvelteComponentTyped<{
     duration: number;
     easing: string;
-    key: object;
+    key: any;
   }> {}
   export class AccordionItem extends SvelteComponentTyped<{
-    key: object;
+    key: any;
   }> {}
   export class CollapsibleCard extends SvelteComponentTyped<{
     open: boolean;
