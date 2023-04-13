@@ -23,7 +23,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "svelte-collapse": "^0.0.4"
+    "svelte-collapse": "^0.1.1"
   },
   "repository": {
     "type": "git",
