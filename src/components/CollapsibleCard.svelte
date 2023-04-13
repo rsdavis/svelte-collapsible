@@ -27,9 +27,9 @@
 
 <div class='card' class:open aria-expanded={open}>
 
-    <div class='card-header' on:click={handleToggle}>
+    <button type="button" class='card-header' on:click={handleToggle}>
         <slot name='header'/>
-    </div>
+    </button>
 
     <div class='card-body' use:collapse={{open, duration, easing}}>
         <slot name='body'/>
@@ -38,10 +38,12 @@
 </div>
 
 <style>
-
     .card-header {
         cursor: pointer;
         user-select: none;
     }
-
+    button {
+        background: transparent;
+        border: none !important;
+    }
 </style>
