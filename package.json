@@ -2,7 +2,7 @@
   "name": "svelte-collapsible",
   "description": "A collection of high-level Svelte components designed for expanding and collapsing content.",
   "keywords": ["svelte", "component", "accordion", "collapse", "expand"],
-  "version": "0.2.1",
+  "version": "0.2.2",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
