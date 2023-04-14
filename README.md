@@ -70,7 +70,7 @@ You can also use this feature to set which item should be open when mounted.
 
 If you need control of the selected item, you can use the `key` prop and the `on:change` event to manage the state of the component externally.
 
-You can modify the duration and easing of the collapsible section using component props.
+You can modify the duration and easing (see [CSS `transition-timing-function`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) for available options) of the collapsible section using component props.
 
 ```html
 <script>
