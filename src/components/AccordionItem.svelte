@@ -30,9 +30,9 @@
 
 <li class='accordion-item' aria-expanded={params.open}>
 
-    <div class='accordion-item-header' on:click={handleToggle}>
+    <button type="button" on:click={handleToggle} class='accordion-item-header'>
         <slot name='header' />
-    </div>
+    </button>
 
     <div class='accordion-item-body' use:collapse={params}>
         <slot name='body' />
@@ -46,5 +46,9 @@
     .accordion-item-header {
         user-select: none;
         cursor: pointer;
+    }
+    button {
+        background: transparent;
+        border: none !important;
     }
 </style>
