@@ -28,7 +28,7 @@
 
 </script>
 
-<li class='accordion-item' aria-expanded={params.open}>
+<li class='accordion-item' class:open={params.open}>
 
     <button type="button" on:click={handleToggle} class='accordion-item-header'>
         <slot name='header' />
